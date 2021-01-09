@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: grid;
+    grid-template-areas: "nav-left nav-right";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh;
+    margin: 0 8%;
+    grid-gap: 10%;
+    font-size: small;
+}
+
+.nav-logo {
+    margin-right: 7%;
+    width: 20%;
+    height: 5vh;
+}
+
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-left-content,.nav-right-content {
+    margin-right: 5%;
+}
+.nav-left-content:hover,.nav-right-content:hover {
+    cursor: pointer;
+}
+.nav-right-content{
+    color: blue;
+}
+
+.nav-right-button {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 15px;
+    height: 25%;
+}
+
+.top{
+    margin: 3% 8% 8% 8%;
+}
+.bottom{
+    margin: 3% 8% 0 8%;
+}
+
+.top-heading ,.bottom-heading {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 5%;
+    font-weight: 400;
+}
+
+.top-inside {
+    display: grid;
+    grid-template-areas: "top-content1 top-content2 top-content3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30vh;
+    text-align: center;
+    grid-gap: 10%;
+}
+.bottom-inside {
+    display: grid;
+    grid-template-areas: "bottom-content1 bottom-content2 bottom-content3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 30vh;
+    text-align: center;
+    grid-gap: 10%;
+
+}
+
+.top-content-head ,.bottom-content-head{
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+/* .bottom-inside > div > p {
+    margin-top: 0;
+    width: 80%;
+} */
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+
+.request-button {
+    text-align: center;
+    width: 15%;
+    height: 3vh;
+    padding: 10px 15px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.buy-button {
+    text-align: center;
+    width: 15%;
+    height: 3vh;
+    padding: 10px 15px;
+    background-color: orangered;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}

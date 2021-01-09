@@ -1,23 +1,109 @@
-let toarray = ["Early Monday morning MUSIC"]
+let input = "Early Monday     morning   MUSIC"
 
+function goodStr (str){
+    str = str.trim().split(' ')  
+    return str;
+}
 
-let bigAlpha = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-let smallAlpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+function goodArray (goodStr) {
 
+    let str = ""
+    let newarray = []
+    for(let i=0; i<goodStr.length; i++){
+        if(goodStr[i].length >= 1){
+            str += goodStr[i] + " " 
+            newarray.push(str.trim())
+            str = ""
+        }
 
-// function traverseArray (array){
-    for(let i=0; i<toarray.length; i++){
-        for(let j=0; j<toarray[i].length; j++){
-            console.log(toarray[i][j])
-            for(let k=0; k<26; k++){
-                if(toarray[i][j] === smallAlpha[k]){
-                    toarray[i][j] = bigAlpha[k]
-                }
-            }console.log(bigAlpha[k])
-         }
-     }
+    }
+    return newarray
+}
+
+console.log(goodArray(goodStr(input)))
+
+// function changeToLower (char) {
+//     let smallAlpha = "abcdefghijklmnopqrstuvwxyz"
+//     let bigAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//     for(let i=0; i<26; i++){
+//         if(bigAlpha[i] === char){
+//            return smallAlpha[i]
+//         }
+//     }
+//     return char
+// }
+// function changeToUpper (char) {
+//     let bigAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+//     let smallAlpha = "abcdefghijklmnopqrstuvwxyz"
+//     for(let i=0; i<26; i++){
+//         if(smallAlpha[i] === char){
+//            return bigAlpha[i]
+//         }
+//     }
+//     return char
 // }
 
+// function strToLower (str) {
+//     let output = ""
+//     for(let i=0; i<str.length; i++){
+//         output += changeToLower(str[i])
+//     }
+//     return output
+// }
+// function arrayToLower (str) {
+//     let output = "";
+//     for(let i=0; i<str.length; i++){
+//         for(let j=0; j<str[i].length; j++){
+//             output += (changeToLower(str[i][j]))
+//         }
+//     }
+//     return output
+// }
+
+// console.log(arrayToLower(toarray))
+
+// function strToUpper(str) {
+    
+//     let output = ""
+//     for(let i=0; i<str.length; i++){
+//         output += changeToUpper(str[i])
+//     }
+//     return output
+// }
+
+// function arrayToUpper (str) {
+//     let output = "";
+//     for(let i=0; i<str.length; i++){
+//         for(let j=0; j<str[i].length; j++){
+//             output += (changeToUpper(str[i][j]))
+//         }
+//     }
+//     return output
+// }
+// console.log(arrayToUpper(toarray))
+
+// function toHypenCase (arrayToLower) {
+//     for(let i=0; i<arrayToLower.length; i++){
+//         if(arrayToLower[i] === " "){
+//             console.log("-")
+//         }
+//     }
+// }
+
+// toHypenCase(arrayToLower())
 
 
-// (traverseArray(toarray))
+// function snakeCase (arrayToLower) {
+//     for(let i=0; i<arrayToLower.length; i++){
+//         if(arrayToLower[i] === " "){
+//             console.log("_")
+//         }
+//     }
+// }
+
+// snakeCase(arrayToLower())
+
+
+// function camelCase (str) {
+   
+// }

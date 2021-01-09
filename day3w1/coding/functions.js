@@ -6,19 +6,19 @@ function goodStr (str){
     return str;
 }
 
-console.log(goodStr(input))
+let goodstr = (goodStr(input))
 
-function goodArray (newStr) {
+function goodArray (goodStr) {
 
     let str = ""
     let newarray = []
-    for(let i=0; i<input.length; i++){
-        if(input[i].length >= 1){
-            str += input[i] + " " 
+    for(let i=0; i<goodStr.length; i++){
+        if(goodStr[i].length >= 1){
+            str += goodStr[i] + " " 
             console.log(str)
         }
-    }
-    console.log(newarray.push(str.trim()))
+    } newarray = newarray.push(str.trim())
+    return newarray
 }
 
 console.log(goodArray(goodStr))
