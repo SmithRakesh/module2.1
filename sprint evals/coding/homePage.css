@@ -1,0 +1,47 @@
+body {
+    background-color:  orangered ;
+}
+
+.container {
+    margin: 15px 50px;
+}
+
+.container-heading {
+    text-align: center;
+
+}
+
+
+.container input {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.container button {
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    background-color: lightslategray;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#categories {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+
+}
+
+#categories > option:hover {
+    background-color: coral;
+}
