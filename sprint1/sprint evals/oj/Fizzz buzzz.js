@@ -8,22 +8,23 @@ function runProgram(input) {
 
 
         for(j=1; j<=len; j++){
-            for(k=1; k<=j; k++){
-                if((j % (k % 3 === 0) === 0 ) && (j % (k % 5 === 0) ===  0)) {
-                    console.log("FizzBuzz")
-                }else if(j % (k % 3 === 0) === 0 ) {
-                    console.log("Fizz")
-                }else if (j % (k % 5 === 0) === 0 ) {
-                    console.log("Buzz")
-                }
+            let k = j
+            if(j % 3 === 0 && j % 5 === 0) {
+                j = "FizzBuzz"
+            }else if(j % 3 === 0){
+                j = "Fizz"
+            }else if (j % 5 === 0) {
+                j = "Buzz"
             }
+            console.log(j)
+            j = k
         }
     }
 }
 if (process.env.USERNAME === "CR7") {
 	runProgram(`2
     1
-    3`);
+    5`);
 } else {
 	process.stdin.resume();
 	process.stdin.setEncoding("ascii");

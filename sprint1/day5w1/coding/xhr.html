@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search repo</title>
+</head>
+<body>
+    <form action="form">
+        <input type="text" placeholder="Search Repositories" name="searchTerm" id="searchTerm">
+
+        <select name="sortBased" >
+            <option value="">sort-based-on</option>
+            <option value="stars">stars</option>
+            <option value="forks">forks</option>
+            <option value="help-wanted-issues">help-wanted-issues</option>
+            <option value="updated">updated</option>
+        </select>
+        
+        <select name="sortOrder" >
+            <option value="">Sort Order</option>
+            <option value="asc">ASCENDING</option>
+            <option value="desc">DESCENDING</option>
+        </select>
+
+        <input type="submit" value="SEARCH">
+    </form>
+    <div id="display"></div>
+    <script src="xhr.js"></script>
+</body>
+</html>

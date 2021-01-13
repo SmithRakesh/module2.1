@@ -1,23 +1,11 @@
 function runProgram(input) {
-    input = input.trim().split('\n')
+    input = input.trim().split('')
 
-    let len = +input[0]
-
-    for(let i=1; i<=len; i++){
-       let arr = (input[i].trim())
-       if(arr === "India"){
-           console.log(i)
-       }
-    }
-
+    
+    
 }
 if (process.env.USERNAME === "CR7") {
-	runProgram(`5
-    Russia
-    USA
-    Japan
-    China
-    India`);
+	runProgram(`ATTCGGGA`);
 } else {
 	process.stdin.resume();
 	process.stdin.setEncoding("ascii");

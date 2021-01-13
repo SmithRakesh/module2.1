@@ -4,19 +4,23 @@ function runProgram(input) {
     let len = +input[0]
     let arr = input[1].trim().split(' ').map(Number)
 
-    let count = 0;
+    let count1 = 0;
+    let count2 = 0;
     let primeNum = []
     for(let j=0; j<len; j++){
         if(isPrime(arr[j])){
             primeNum.push(arr[j])         
         }
     }
+
     for(let k=0; k<primeNum.length; k++){
-        if(primeNum[0] === primeNum[k] && primeNum[1] === primeNum[k]) {
-            count++
+        if(primeNum[0] === primeNum[k])  {
+            count1++
+    }   if(primeNum[1] === primeNum[k]) {
+            count2++
     }
 }
-    console.log(count)
+    console.log(count1 === count2 ? count1+count2 : count1 < count2 ? count1 : count2)
     
     function isPrime (num){
         if(num < 2) return false;
@@ -31,8 +35,8 @@ function runProgram(input) {
 
 }
 if (process.env.USERNAME === "CR7") {
-	runProgram(`8
-    2 3 1 1 3 2 5 6
+	runProgram(`7
+    13 12 11 5 1 19 11
     `);
 } else {
 	process.stdin.resume();
