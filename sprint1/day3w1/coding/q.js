@@ -1,17 +1,19 @@
-function goodStr (str){
-    str = str.trim().split(' ')  
-    return str;
+let array = [ 'Early', 'Monday', 'morning', 'MUSIC' ]
+
+for(let i=0; i<array.length; i++){
+    for(let j=0; j<array[i].length; j++){
+       (array[i][j]) = changeToLower(array[i][j])
+       console.log(array[i][j])
+    }
 }
 
-function goodArray (goodStr) {
-
-    let str = ""
-    let newarray = []
-    for(let i=0; i<goodStr.length; i++){
-        if(goodStr[i].length >= 1){
-            str += input[i] + " "
+function changeToLower (char) {
+    let smallAlpha = "abcdefghijklmnopqrstuvwxyz"
+    let bigAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    for(let i=0; i<26; i++){
+        if(bigAlpha[i] === char){
+           return smallAlpha[i]
         }
-    }console.log(newarray.push(str.trim()))
+    }
+    return char
 }
-
-console.log(goodArray(goodStr))

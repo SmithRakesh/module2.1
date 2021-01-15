@@ -1,24 +1,22 @@
 function runProgram(input) {
     input = input.trim().split('\n')
 
-	let len = +input[0]
-	let obj = {}
-	
-	for(let i=1; i<=len; i++){
-		let arr = input[i].trim()
-		obj[arr] = i
-	}
+    let len = +input[0]
+    let arr = input[1].trim().split(' ').map(Number)
 
-	console.log(obj["India"])
+    for(let i=0; i<len; i++){
+        if(arr[i+1] > arr[i]) {
+            console.log(arr[i])
+        }
+    }
+   
+
+	
 
 }
 if (process.env.USERNAME === "CR7") {
-	runProgram(`5
-    Russia
-    USA
-    Japan
-    China
-    India`);
+	runProgram(`6
+    16 17 4 3 5 2`);
 } else {
 	process.stdin.resume();
 	process.stdin.setEncoding("ascii");

@@ -1,65 +1,58 @@
 let input = "Early Monday     morning   MUSIC"
+// let toarray = inputToArray(input);
 
-function trimExtraSpace (str) {
-    
-let prevchar = " "
-let result = ""
-let arr = []
+function inputToArray (str){
+    let word = ""
+    let arr = []
 
-for(let i=0; i<str.length; i++){
-    let newstr = str[i]
-    if(!(prevchar === " " && newstr === prevchar))
-        result += newstr
-        prevchar = newstr
-    
+    for(let i=0; i<input.length; i++){
+        if(input[i] !== " "){
+            word += input[i]
+        }
+        else if(word){
+            arr.push(word)
+            word = ""
+        }
+    }
+
+    if(word){
+        arr.push(word)
+    }
+    return arr;
 }
 
- arr.push(result);
- return arr;
-
-}
-
-
-console.log(trimExtraSpace(input))
-
-function changeCharLower (char) {
+function changeToLower (char) {
     let smallAlpha = "abcdefghijklmnopqrstuvwxyz"
     let bigAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
     for(let i=0; i<26; i++){
-        if(bigAlpha[i] === char) {
+        if(bigAlpha[i] === char){
            return smallAlpha[i]
         }
     }
     return char
 }
-function changeCharUpper (char) {
-    let smallAlpha = "abcdefghijklmnopqrstuvwxyz"
-    let bigAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-    for(let i=0; i<26; i++){
-        if(smallAlpha[i] === char) {
-           return bigAlpha[i]
-        }
+function convertArrayToLower (array) {
+    array.map(e => changeToLower(e))
+    return array
     }
-    return char
+
+    console.log(convertArrayToLower(toarray))
+
+
+
+
+
+
+function convertToCamelCase(input){
+    // let toarray = inputToArray(input);
+    let lowerString = convertArrayToLower(toarray)
 }
 
-function strToLower (str) {
-    let output = ""
-    for(let i=0; i<str.length; i++){
-        output += changeCharLower(str[i])
-    }
-    return trimExtraSpace(output);
-    }
+function hypenCase(){
 
+}
 
-    // newstr = strToLower(input)
-    // let arr = []
-    // arr.push(newstr)
-    // console.log(arr)
+function snakeCase() {
 
-    // changeCharUpper(newstr[0])
-    // console.log(newstr)
-
-    
+}

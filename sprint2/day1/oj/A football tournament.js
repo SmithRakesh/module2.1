@@ -2,23 +2,35 @@ function runProgram(input) {
     input = input.trim().split('\n')
 
 	let len = +input[0]
-	let obj = {}
-	
-	for(let i=1; i<=len; i++){
-		let arr = input[i].trim()
-		obj[arr] = i
-	}
+	let goals = {}
+	let teams = []
 
-	console.log(obj["India"])
+	for(let i=1; i<=len; i++){
+		let key = input[i].trim()
+		if(key in goals){
+			goals[key]++
+		}
+		else{
+			goals[key] = 1
+			teams.push(key)
+		}
+    }
+
+    if(teams.length > 1){
+		console.log(goals[teams[0]] > goals[[teams[1]]] ? teams[0] : teams[1])
+	}
+	else{
+		console.log(teams[0])
+	}
 
 }
 if (process.env.USERNAME === "CR7") {
 	runProgram(`5
-    Russia
-    USA
-    Japan
-    China
-    India`);
+    A
+    ABA
+    ABA
+    A
+    A`);
 } else {
 	process.stdin.resume();
 	process.stdin.setEncoding("ascii");

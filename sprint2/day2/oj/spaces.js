@@ -16,5 +16,5 @@ for(let i=0; i<input.length; i++){
 if(word){
     arr.push(word)
 }
-
+console.log(arr.join(' '))
 
