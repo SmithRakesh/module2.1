@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Users</title>
+    <link rel="stylesheet" href="Git.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="containerHead">Search users</h1>
+        <form>
+            <input type="text" placeholder="Search-Users" name="searchusers" id="searchusers">
+            <select name="sort" id="sort">
+                <option value="">sortby</option>
+                <option value="followers">followers </option>
+                <option value="repositories">repositories</option>
+                <option value="JoiningDate">JoiningDate</option>
+            </select>
+        
+            <select name="order" id="order">
+                <option value="">order</option>
+                <option value="asc">ascending</option>
+                <option value="desc">descending</option>
+            </select>
+
+            <select name="page" id="page">
+                <option value="">page</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+
+            <select name="per_page" id="per_page">
+                <option value="">per-page</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="75">75</option>
+                <option value="100">100</option>
+            </select>
+            <input type="submit" value="Search-Users" id="submit">
+        </form>
+    </div>
+    <div class="display"></div>
+    <script src="Git.js"></script>
+</body>
+</html>
