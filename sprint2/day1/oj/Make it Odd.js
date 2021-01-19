@@ -2,18 +2,34 @@ function runProgram(input) {
     input = input.trim().split('\n')
 
     let tests = +input[0]
-    let arr = input[1].trim().split(' ')
-    let count = 1;
 
+    let line = 1;
     for(let i=0; i<tests; i++){
-        if(arr[i] >= arr[i+1]){
-            count++
+        let len = +input[line++]
+        let arr = input[line++].trim().split(' ').map(Number)
+
+        if(arr.length === 1){
+            console.log(arr[0] % 2 === 1 ? "YES" : "NO" )
         }
-    }console.log(count)
+        else if
+        (arr.every(e => (e % 2 === 0 ))){
+            console.log("NO")
+        }else if(arr.every( e => (e % 2 === 1 && arr.length % 2 === 0)))
+            console.log("NO")
+        else if
+        (arr.some(e => e % 2 === 1)){
+            console.log("YES")
+        }
+
+		}
+		
 }
 if (process.env.USERNAME === "CR7") {
-	runProgram(`6
-    1 2 4 3 5 8`);
+	runProgram(`2
+    5
+    1 2 3 4 5
+    5
+    2 2 2 2 2`);
 } else {
 	process.stdin.resume();
 	process.stdin.setEncoding("ascii");

@@ -36,10 +36,10 @@
         })
 
             
-            function handleSubmit (){
-                event.preventDefault()
+            function handleSubmit (e){
+                e.preventDefault()
 
-                let form = new FormData(event.target)
+                let form = new FormData(e.target)
 
                 let username = form.get("username")
                 let password = form.get("password")
@@ -59,9 +59,7 @@
                         time,
                     }
 
-
                     loginData = [...loginData,payLoad]
-                    console.log(loginData)
                     savingToLocalStorage ('loginData',loginData)
                     savingToLocalStorage ('currentUser',payLoad)
                     redirect(payLoad)

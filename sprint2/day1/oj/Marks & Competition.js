@@ -4,15 +4,33 @@ function runProgram(input) {
     let len = +input[0]
     let arr = input[1].trim().split(' ').map(Number)
 
-    for(let i=0; i<len; i++){
-        if(arr[i+1] > arr[i]) {
-            console.log(arr[i])
-        }
-    }
-   
+	let res = arr[len-1]
+	let max = arr[len-1]
 
-	
 
+	for(let i=len-2; i>=0; i--){
+		if(arr[i] >= max){
+			max = arr[i]
+			res = arr[i] + " " + res
+		}
+	}
+
+	console.log(res)
+
+	// let res = ""
+	// for(let i=0; i<len; i++){
+	// 	let flag = true;
+	// 	for(let j=i+1; j<len; j++){
+	// 		if(arr[i] < arr[j]){
+	// 			flag = false;
+	// 			break;
+	// 		}
+	// 	}
+	// 	if(flag){
+	// 		res += arr[i] + " "
+	// 	}
+	// }
+	// console.log(res.trim())
 }
 if (process.env.USERNAME === "CR7") {
 	runProgram(`6

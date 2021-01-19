@@ -5,12 +5,16 @@ let logoutBtn = document.getElementById('button')
 
 let currentUser = JSON.parse(localStorage.getItem("currentUser"))
 
+console.log(currentUser)
+
 window.addEventListener('load',function(){
     const { username , time} = currentUser
 
     if(!username){
         location = "loginform.html"
     }
+
+    console.log(username,time)
 
     usernameDisplay.textContent = username;
     timeDisplay.textContent = time;

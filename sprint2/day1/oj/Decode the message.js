@@ -1,8 +1,20 @@
 function runProgram(input) {
-    input = input.trim().split('')
+	input = input.trim()
+	
+	let max = 1;
+	let count = 1;
 
-    
-    
+	for(let i=0; i<input.length; i++){
+		if(input[i] === input[i+1]){
+			count++
+		}else{
+			if(max < count){
+				max = count
+			}
+			count = 1
+		}
+	}
+    console.log(max)
 }
 if (process.env.USERNAME === "CR7") {
 	runProgram(`ATTCGGGA`);

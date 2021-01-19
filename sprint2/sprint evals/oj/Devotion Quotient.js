@@ -7,8 +7,10 @@ function runProgram(input) {
     let arr = []
     for(let i=0; i<tests; i++){
          arr.push(input[line++].trim().split(' '))
-        }
-        console.log(arr)
+		}
+		// console.log(+arr[0][1])
+		let newArr = arr.map(el => [el[0], +el[1]]).sort((a,b) => b[1] - a[1])
+		console.log(newArr[0])
 }
 if (process.env.USERNAME === "CR7") {
 	runProgram(`4
