@@ -13,14 +13,18 @@ function runProgram(input) {
         }
     }
 
-    for(let k=0; k<primeNum.length; k++){
-        if(primeNum[0] === primeNum[k])  {
-            count1++
-    }   if(primeNum[1] === primeNum[k]) {
-            count2++
-    }
-}
-    console.log(count1 === count2 ? count1+count2 : count1 < count2 ? count1 : count2)
+    console.log(primeNum)
+    let count = 0
+    if(primeNum.includes(primeNum[0] && primeNum[1])) count++
+    console.log(count)
+//     for(let k=0; k<primeNum.length; k++){
+//         if(primeNum[0] === primeNum[k])  {
+//             count1++
+//     }   if(primeNum[1] === primeNum[k]) {
+//             count2++
+//     }
+// }
+//     console.log(count1 === count2 ? count1+count2 : count1 < count2 ? count1 : count2)
     
     function isPrime (num){
         if(num < 2) return false;

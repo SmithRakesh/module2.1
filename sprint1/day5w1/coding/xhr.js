@@ -4,10 +4,10 @@ window.addEventListener('load',function(){
 })
 let display = document.getElementById('display')
 
-function handleSubmit() {
-    event.preventDefault()
+function handleSubmit(e) {
+    e.preventDefault()
 
-    let form = new FormData(event.target)
+    let form = new FormData(e.target)
 
     let searchTerm = form.get('searchTerm')
     let sortBased = form.get('sortBased')
@@ -40,7 +40,7 @@ function handleData (q,sort,order,printData){
     }
 }
 
-function printData(){
+function printData(data){
     display.innerHTML = ""
 
     let table = document.createElement('table')

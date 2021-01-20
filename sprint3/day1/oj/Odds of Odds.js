@@ -7,16 +7,19 @@ function runProgram(input) {
     for(let i=0; i<tests; i++){
         let len = +input[line++]
         let arr = input[line++].trim().split(' ').map(Number)
-        
-        if(arr.length === 1){
-            console.log(arr[0] % 2 === 1 ? "Yes" : "No")
-        }else if(arr.length > 1){
-            let sum = 0;
-            for(let j=0; j<len; j++){
-                sum += arr[j]
-            }
-            console.log(sum % 2 ? "Yes" : "No") 
-        }
+	
+	if(arr.length === 1){
+		console.log(arr[0] % 2 === 1 ? "Yes" : "No")
+	}
+	else if(arr.length > 1){
+			let count = 0
+			for(let j=0; j<len; j++){
+				if(arr[j] % 2 === 1){
+					count++
+				}
+			}
+			console.log(count % 2 === 1 ? "Yes" : "No")
+		}
     }
 }
 if (process.env.USERNAME === "CR7") {
