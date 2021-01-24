@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "id": 1232323,
+      "name": "Crispy Calamari Rings",
+      "image": "https://www.dinneratthezoo.com/wp-content/uploads/2019/11/fried-calamari-67.jpg",
+      "price": 225.45,
+      "desc": "Yummy & crispy rings with mayonise, red sauce.",
+      "category_name": "Continental"
+    },
+    {
+      "id": 1232323,
+      "name": "Shrimp with Vermicelli and Garlic.",
+      "price": 121.45,
+      "image": "https://i.pinimg.com/originals/ed/f2/d3/edf2d30a45af556b1604fbde9bcbcc90.jpg",
+      "desc": "Chinese garlic flavoured shrimp from the hands of bangalore's best Chef.",
+      "category_name": "Chinese"
+    },
+    {
+      "id": 1232323,
+      "name": "Hyderabadi Biryani",
+      "price": 499,
+      "image": "https://assets.limetray.com/assets/image_manager/uploads/5128/Malamal%20Chicken%20Biryani%20(2).jpg",
+      "desc": "Mouth watering authentic Mugalai biryani.Strictly no spoons taste the divine feel with your fingers.",
+      "category_name": "Indian"
+    },
+    {
+      "id": 1232323,
+      "name": "Kerala Fish curry",
+      "price": 360,
+      "image": "https://www.playfulcooking.com/wp-content/uploads/2019/04/kerala-style-fish-curry-03-720x720.jpg",
+      "desc": "Feel like your in kerala after tasting fish curry.",
+      "category_name": "Indian"
+    },
+    {
+      "id": 1232323,
+      "name": "Prawn Pie",
+      "price": 1245,
+      "image": "https://img.delicious.com.au/wHo_F_ml/del/2015/10/smoky-fish-and-prawn-pie-15206-1.jpg",
+      "desc": "Best selling dish on the website , I bet it'll be the best you've ever tasted. ",
+      "category_name": "Continental"
+    },
+    {
+      "id": 1232323,
+      "name": "Chow Mein",
+      "price": 115,
+      "image": "https://www.jocooks.com/wp-content/uploads/2019/03/chow-mein-1-5.jpg",
+      "desc": "Chinese traditional chow mein is waiting for you. ",
+      "category_name": "Chinese"
+    },
+    {
+      "id": 1232323,
+      "name": "Mangolore Neer Dosai",
+      "price": 125,
+      "image": "https://i.ndtvimg.com/i/2018-03/samak-dosa_650x400_61521181646.jpg",
+      "desc": "Karnataka's most wanted dish is here, Grab a bite & say Ee Sala Cup Namde",
+      "category_name": "Indian"
+    }
+  ],
+  "customers": [
+    {
+      "username": "Smith Rakesh",
+      "mail": "askjs.com",
+      "number": "255455512",
+      "address": "bamskadk akdkls",
+      "pincode": "5455551",
+      "id": 1
+    },
+    {
+      "username": "Deepak",
+      "mail": "askjs.com",
+      "number": "45464645",
+      "address": "sjlajldjmdjalj545c",
+      "pincode": "454554",
+      "id": 2
+    },
+    {
+      "username": "Nihal",
+      "mail": "askjs.com",
+      "number": "588831222",
+      "address": "Xdsds2d122",
+      "pincode": "13135",
+      "id": 3
+    },
+    {
+      "username": "Smith Rakesh",
+      "mail": "sjsmith@gmail.com",
+      "number": "8663254562",
+      "address": "r.t.nagar post bangalore",
+      "pincode": "560045",
+      "id": 4
+    }
+  ]
+}

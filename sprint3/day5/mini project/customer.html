@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="customer.css">
+    <title>Customer Details</title>
+  
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-icon customer">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="site-name">Smith's Banquet</div>
+       <div class="cart">
+            <div class="nav-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <span class="count">0</span>
+       </div>
+    </nav>
+    <div class="container">
+        <h1>Customer Details</h1>
+        <form>
+            <label class="content" for="name">Enter Your Name<i class="fas fa-user-check"></i></label><br>
+            <input class="input" type="text" placeholder="Your Name" id="name" name="username" required><br><br>
+            <label class="content" for="mail">Enter Your Mail<i class="fas fa-envelope"></i></label><br>
+            <input class="input" type="mail" name="mail" id="mail" placeholder="Your mail" required><br><br>
+            <label class="content" for="number">Enter Your Number <i class="fas fa-phone"></i></label><br>
+            <input class="input" type="number" name="number" id="number" placeholder="Your mobile number" required><br><br>
+            <label class="content" for="address">Enter Your Address<i class="fas fa-home"></i></label><br>
+            <input class="input" type="text" name="address" id="address" placeholder="Delivery Location" required><br><br>
+            <label class="content" for="pincode">Enter Your Pincode</label><br>
+            <input class="input" type="number" name="pincode" id="pincode" placeholder="your pincode"><br><br>
+            <input type="submit" value="Submit" class="submit">
+        </form>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/a2bf3002b0.js" crossorigin="anonymous"></script>
+    <script src="customer.js"></script>
+</body>
+</html>

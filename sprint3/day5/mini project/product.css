@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hachi Maru Pop', cursive;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    height: 60px;
+    padding: 0.5rem;
+    width: 100%;
+    background-color: lightcyan;
+    z-index: 1;
+}
+
+.site-name{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.nav-icon{
+    cursor: pointer;
+}
+
+.cart{
+    position: relative;
+}
+
+.count{
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    background-color: maroon;
+    color: white;
+    border-radius: 30%;
+    padding: 0 3px;
+    cursor: pointer;
+}
+
+.middle{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/meatballs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.input{
+    padding: 250px 450px;
+}
+
+.input-box{
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.register{
+    color: black;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    padding: 12px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.items-heading {
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card > img {
+    width: 60%;
+}
+
+.card{
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 16px #bababa, -8px -8px 16px #ffffff;
+    padding: 10px;
+    width: 25%;
+    background-color: rgb(233, 231, 227);
+    text-align: center;
+    position:relative;
+}
+
+.card-btn {
+    padding:10px;
+    background-color: rgb(85, 124, 163);
+    border:none;
+    border-radius:10px;
+    position: absolute;
+    bottom:5px;
+    right:20px;
+    color:white;
+    cursor: pointer;
+}
