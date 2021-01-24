@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - delay</title>
+</head>
+    <div class="wrapper">
+        <form action="submit">
+            <input type="text" placeholder="Enter your name" name="username" id="username" required>
+            <input type="password" placeholder="Enter your password" name="password" id="password" required>
+            <input type="text" placeholder="Enter delay" name="delay" id="delay" required>
+            <button id="button">CHECK</button>
+        </form>
+        <div id="display"></div>
+    </div>
+
+<body>
+    <script>
+
+        let data = [ 
+            {
+                username: "Smith Rakesh",
+                password: '12345'
+            },
+            {
+                username:"sam",
+                password: '1234'
+            }
+    ]
+
+        window.addEventListener('load',function(){
+            let form = document.querySelector('form')
+            form.addEventListener('submit',handlesubmit)
+        })
+
+        let display = document.getElementById('display')
+
+        function handlesubmit(e) {
+            e.preventDefault()
+
+            let form = new FormData(e.target)
+
+            let username = form.get('username')
+            let password = form.get('password')
+            let delay = form.get('delay')
+            delay = +delay
+
+           let userDetails = {
+               username,password
+           }
+           if(!authCheck(userDetails)){
+               displayError()
+           }
+           else if(authCheck(userDetails)){
+
+            function sleep (delay) {
+            return new Promise ((resolve,reject) => {
+                if(!delay || typeof delay !== 'number'){
+                    reject('Input must be a number')
+                }
+               setTimeout( () => resolve(),delay)
+                    })
+                }
+
+           sleep(delay).then( () => alert("Success")).catch( err => alert(err))
+           }
+        }
+
+        function displayError (){
+            display.innerHTML = ""
+            display.textContent = "Invalid Credentials"
+        }
+
+        function authCheck (input) {
+            return data.find(user => user.username === input.username && user.password === input.password)
+        }
+    </script>
+</body>
+</html>
