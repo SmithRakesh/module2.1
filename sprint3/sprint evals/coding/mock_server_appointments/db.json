@@ -1,0 +1,13 @@
+{
+  "appointments": [
+    {
+      "name": "Smith Rakesh.M",
+      "age": "23",
+      "appointment": "book a ticket",
+      "time": "16:35",
+      "date": "2021-01-27",
+      "gender": "male",
+      "id": 1
+    }
+  ]
+}
