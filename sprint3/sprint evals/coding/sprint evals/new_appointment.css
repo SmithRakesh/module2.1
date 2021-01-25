@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
+body{
+    font-family: 'Fraunces', serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-image: url("https://www.treehugger.com/thmb/wcIaEyn04qWqrMWppXFCIZy5E74=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__mnn__images__2017__12__happy_modern_workplace-5101f1210d2c40c9a4f89f2243c9d4f3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+}
+.new-appointment{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+    background-color: rgb(192, 57, 84);
+    color:white;
+    position: sticky;
+    height: 50px;
+}
+.nav-icon{
+    cursor: pointer;
+}
+
+.page-name{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.input{
+    padding:10px 15px;
+    border-radius:10px;
+    border:none;
+}
+
+.label{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.submit {
+    background-color: lightslategray;
+    border-radius: 10px;
+    border:none;
+    color:white;
+    font-size: 20px;
+    cursor:pointer;
+    padding:8px 15px
+}

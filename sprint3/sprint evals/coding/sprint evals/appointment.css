@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces&display=swap');
+
+body{
+    font-family: 'Fraunces', serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    background-image: url("https://www.intheblack.com/-/media/intheblack/allimages/sponsored-content/2018/dexus-office-space.jpg?rev=835b5eb0fcd5481b960b7abfeec3eed2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.all{
+    text-align: center;
+    font-size:28px;
+    margin:50px;
+    color:teal;
+}
+
+.new-appointment{
+    cursor: pointer;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 25px;
+    background-color: rgb(192, 57, 84);
+    color:white;
+    position: sticky;
+    height: 50px;
+}
+.nav-icon{
+    cursor: pointer;
+}
+
+.page-name{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.cards{
+    display:flex;
+    flex-wrap: wrap; 
+    margin: 20px auto;
+     width:80%;
+     justify-content: space-evenly;
+}
+
+.card{
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    background-color:lightcyan;
+}
