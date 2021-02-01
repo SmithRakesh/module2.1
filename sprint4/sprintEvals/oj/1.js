@@ -1,18 +1,9 @@
 function runProgram(input) {
-    input = input.trim()
+    input = input.trim().split('\n')
 
-    let count = 0
-    for(let i=0; i<input.length-1; i++){
-        for(let j=i+1; j<input.length; j++){
-            if(input[i] === input[j]){
-                count++
-            }
-        }
-    }
-    console.log(input.length + count)
 }
 if (process.env.USERNAME === "CR7") {
-	runProgram(`abcab`);
+	runProgram(``);
 } else {
 	process.stdin.resume();
 	process.stdin.setEncoding("ascii");

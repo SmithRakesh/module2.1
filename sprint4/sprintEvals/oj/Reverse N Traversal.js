@@ -1,18 +1,25 @@
 function runProgram(input) {
-    input = input.trim()
+    input = input.trim().split('\n')
 
-    let count = 0
-    for(let i=0; i<input.length-1; i++){
-        for(let j=i+1; j<input.length; j++){
-            if(input[i] === input[j]){
-                count++
-            }
+    let test = +input[0]
+    let line = 1;
+
+    for(let i=0; i<test; i++){
+        let dim = +input[line++];
+        let arr;
+        
+        for(let j=0; j<dim; j++){
+            let arr = input[line++].trim().split(' ').map(Number)
         }
     }
-    console.log(input.length + count)
+
 }
 if (process.env.USERNAME === "CR7") {
-	runProgram(`abcab`);
+	runProgram(`1
+    3
+    1 2 3
+    4 5 6
+    7 8 9`);
 } else {
 	process.stdin.resume();
 	process.stdin.setEncoding("ascii");

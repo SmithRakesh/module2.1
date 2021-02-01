@@ -1,18 +1,32 @@
 function runProgram(input) {
     input = input.trim()
 
-    let count = 0
-    for(let i=0; i<input.length-1; i++){
-        for(let j=i+1; j<input.length; j++){
-            if(input[i] === input[j]){
-                count++
-            }
+    let obj = {}
+	// let sum = 0;
+	let count = 0;
+    for (let i=0; i<input.length; i++){
+        let res = ""
+        for(let j=i; j<input.length; j++){
+			res += input[j]
+			if(input[j] !== input[i]){
+				break
+			}
+			obj[res] = obj[res] ? ++obj[res] : 1; 
+			count++
         }
     }
-    console.log(input.length + count)
+
+    // for(let key in obj){
+	//    sum += obj[key]
+	// }
+	
+	// console.log(sum)
+	console.log(count)
+	// console.log(obj)
+
 }
 if (process.env.USERNAME === "CR7") {
-	runProgram(`abcab`);
+	runProgram(`aaaba`);
 } else {
 	process.stdin.resume();
 	process.stdin.setEncoding("ascii");
