@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+</head>
+<body>
+    <div class="wrapper"></div>
+    <button>Home</button>
+</body>
+<script>
+    let wrapper = document.querySelector(".wrapper")
+    let btn = document.querySelector('button')
+    btn.addEventListener('click',function() {
+        location = "index.html"
+    })
+
+    window.addEventListener('load',function() {
+
+    fetch("http://localhost:3000/questions?id=3").then(res => res.json()).then(res => execute(res))
+    function execute(data){
+        let out = ""
+        for(let i in data){
+            out += `
+            <div class="question">
+            <h3>Question :- ${data[i].question}</h3>
+            <h4>Option1 :-${data[i].option_1}</h4>
+            <h4>Option2 :-${data[i].option_2}</h4>
+            <h4>Option3 :-${data[i].option_3}</h4>
+            <h4>Option3 :-${data[i].option_4}</h4>
+        </div>`
+        }
+        wrapper.innerHTML = out
+    }
+})
+
+    wrapper.innerHTML
+</script>
+</html>

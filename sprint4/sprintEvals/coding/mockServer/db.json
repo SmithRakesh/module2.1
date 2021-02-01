@@ -1,0 +1,54 @@
+{
+  "questions": [
+    {
+      "question": "Capital of India",
+      "option_1": "Bangalore",
+      "option_2": "Chennai",
+      "option_3": "Trivandram",
+      "option_4": "Delhi",
+      "answer": "",
+      "explaination": "",
+      "id": 1
+    },
+    {
+      "question": "National Animal of Australia",
+      "option_1": "White Tiger",
+      "option_2": "Kangaroo",
+      "option_3": "Black Panther",
+      "option_4": "Lion",
+      "answer": "",
+      "explaination": "",
+      "id": 2
+    },
+    {
+      "question": "When is Gandhi Jayanthi Celebrated",
+      "option_1": "january 14",
+      "option_2": "April 14",
+      "option_3": "October 2",
+      "option_4": "November 2",
+      "answer": "",
+      "explaination": "",
+      "id": 3
+    },
+    {
+      "question": "Birth place of A.P.J Abdul Kalam",
+      "option_1": "Rameshwaram",
+      "option_2": "Thirunalvelli",
+      "option_3": "Salem",
+      "option_4": "Saligramam",
+      "answer": "",
+      "explaination": "",
+      "id": 4
+    },
+    {
+      "question": "Who is the First Prime Minister of India",
+      "option_1": "Rajendra Prasad",
+      "option_2": "Jawaharlal Nehru",
+      "option_3": "Sardar vallabha patel",
+      "option_4": "None of the Above",
+      "answer": "",
+      "explaination": "",
+      "id": 5
+    }
+  ]
+}
