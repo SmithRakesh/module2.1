@@ -12,6 +12,7 @@ function runProgram(input) {
 		if(arr[i] >= max){
 			max = arr[i]
 			res = arr[i] + " " + res
+			console.log(res)
 		}
 	}
 
